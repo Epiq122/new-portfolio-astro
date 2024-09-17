@@ -2,14 +2,16 @@
 import Nav from '@/components/Nav.astro';
 import BaseHead from './BaseHead.astro';
 import '@/styles/global.css';
+import Footer from '@/components/Footer.astro';
 ---
 
 <html lang='en'>
   <BaseHead {...Astro.props} />
   <body>
+    <Nav />
     <main>
-      <Nav />
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
